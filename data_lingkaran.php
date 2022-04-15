@@ -1,15 +1,10 @@
 <?php
-require_once 'class_lingkaran.php';
-
-$lingkaran1 = new Lingkaran(10);
-$lingkaran2 = new Lingkaran (7);
-
-echo "Luas Lingkaran 1 :" . $lingkaran1->getluas();
-echo '<br><br>';
-echo "Luas Lingkaran 2 :" . $lingkaran2->getluas();
-
-echo '<br><br>';
-echo "Keliling Lingkaran 1 : ". $lingkaran1->getkeliling();
-echo '<br><br>';
-echo "Keliling Lingkaran 2 : ". $lingkaran2->getkeliling();
-?>
+    require_once "class_lingkaran.php";
+    echo "NILAI PHI: ". Lingkaran::PHI;
+    $lingkar1 = new Lingkaran( 20 );
+    $lingkar2 = new Lingkaran( 10 );
+    echo "<br/>Luas Lingkaran I: ".$lingkar1->getLuas();
+    echo "<br>Luas Lingkaran II: ".$lingkar2->getLuas();
+    echo "<br>Keliling Lingkaran I: ".$lingkar1->getKeliling();
+    echo "<br>Keliling Lingkaran II: ".$lingkar2->getKeliling();
+        ?>

@@ -1,19 +1,18 @@
 <?php
-class lingkaran {
-    public $r;
-    public $d;
+class Lingkaran {
+    private $jari;
     const PHI = 3.14;
-
-    function __construct($r) {
-        $this-> r = $r;
+    function __construct( $r )
+    {
+        $this->jari = $r;
     }
-
-    public function getluas() {
-        return self::PHI * $this->r * $this->r;
+    function getLuas()
+    {
+        return self::PHI * $this->jari * $this->jari ;
     }
-
-    public function getkeliling() {
-        return 2 * self::PHI * $this->r;
+    function getKeliling()
+    {
+        return 2 * self::PHI * $this->jari;
     }
-}
-?>
+    }
+    ?>
